@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Generator</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8" ></script>	
+ 
+
+</head>
+<body>
+  <audio src="profile.mov"></audio>
+
+
+  <dialog id="dialog">
+
+</dialog>
+
+</body>
+
+</html>
+
+<style>
+
+body {
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  background-image: radial-gradient(circle, black 0%, white 5%, black 7%, red 15%, black 25%, red 45%, red 50%, black 60%, red 95%);
+}
+
+
+
+
+
+.go {
+  animation-duration: 2s;
+  animation-name: start;
+  animation-iteration-count: 10;
+}
+
+@keyframes start {
+  from body {
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  background-image: radial-gradient(circle, black 0%, white 5%, black 7%, red 15%, black 25%, red 45%, red 50%, black 60%, red 95%);
+}
+
+5% {
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, white 5%, black 7%, red 15%, black 25%, red 45%, red 50%, black 60% red 95%);
+}
+10% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, black 5%, white 7%, black 15%, red 25%, black 45%, red 50%, red 60% black 95%);
+}
+15% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, red 5%, black 7%, white 15%, black 25%, red 45%, black 50%, red 60% red 95%);
+}
+20% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, black 5%, red 7%, black 15%, white 25%, black 45%, red 50%, black 60% red 95%);
+}
+25% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, red 5%, black 7%, red 15%, black 25%, white 45%, black 50%, red 60% black 95%);
+}
+30% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, red 5%, red 7%, black 15%, red 25%, black 45%, white 50%, black 60% red 95%);
+}
+37% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, black 5%, red 7%, red 15%, black 25%, red 45%, black 50%, white 60% black 95%);
+}
+42% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, red 5%, black 7%, red 15%, red 25%, black 45%, red 50%, black 60% white 95%);
+}
+50% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	white 0%, black 5%, red 7%, black 15%, red 25%, red 45%, black 50%, red 60% black 95%);
+}
+
+55% {
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, white 5%, black 7%, red 15%, black 25%, red 45%, red 50%, black 60% red 95%);
+}
+60% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, black 5%, white 7%, black 15%, red 25%, black 45%, red 50%, red 60% black 95%);
+}
+65% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, red 5%, black 7%, white 15%, black 25%, red 45%, black 50%, red 60% red 95%);
+}
+70% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, black 5%, red 7%, black 15%, white 25%, black 45%, red 50%, black 60% red 95%);
+}
+75% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, red 5%, black 7%, red 15%, black 25%, white 45%, black 50%, red 60% black 95%);
+}
+78% {  
+  background-color: black;
+  background-image: radial-gradient(circle, red 0%, red 5%, black 7%, red 15%, black 25%, white 45%, black 50%, red 60% black 95%);
+}
+81% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	red 0%, black 5%, red 7%, red 15%, black 25%, red 45%, black 50%, white 60% black 95%);
+}
+82% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, red 5%, black 7%, red 15%, red 25%, black 45%, red 50%, black 60% white 95%);
+}
+83% {  
+  background-color: black;
+  background-image: radial-gradient(circle,	white 0%, black 5%, red 7%, black 15%, red 25%, red 45%, black 50%, red 60% black 95%);
+}
+
+
+  84% {
+    background-color: black;
+    background-image: radial-gradient(circle, white 0%, black 25%, black 45%, black 50%, red 70%, white 95%);
+  }
+
+  85% {
+    background-color: black;
+    background-image: radial-gradient(circle, white 0%, black 25%, black 45%, black 50%, red 70%,  black 95%);
+  }
+
+  90% {
+    background-color: black;
+    background-image: radial-gradient(circle, white 0%, black 25%, black 45%, black 50%, red 70%, white 95%);
+  }
+
+  100% {
+    background-color: black;
+    background-image: radial-gradient(circle, black 0%, red 25%, white 45%, red 50%, black 95%);
+  }
+
+  to {  
+  background-color: black;
+  background-image: radial-gradient(circle,	black 0%, white 5%, black 7%, red 15%, black 25%, red 45%, red 50%, black 60% red 95%);
+}
+}
+
+</style>
+<script>
+
+"use strict";
+
+(function(){
+
+window.onload=function(){
+var skill = ["frontend", "css", "javascript", "JSX", "jQuery", "react.js", "ruby", "rails", "node", "sinatra", "psql", "git"];
+
+var adjnouns = ["wizard", "expert", "master", "blackbelt", "overlord", "king", "chief", "titan", "perfectionist", "nerd"];
+
+var nouns = ["cloud", "nougat", "puppy", "cloud", "smile", "marshmellow", "vanilla wafer", "lemonade", "peanutbutter", "sunny day"];
+
+var softverbs = ["hugger", "nuzzler", "cuddler", "nibbler", "smiler", "relaxer", "smuggler", "snuggler", "celebrator", "dreamer", "explorer"];
+
+var $body = $('body');
+
+console.log("linked");
+
+var rand = function(arr){
+	return arr[Math.floor(Math.random()*arr.length)]
+}
+
+var rand2 = function(arr){
+	var dex = Math.floor(Math.random()*arr.length);
+	var first = arr.slice(dex, dex+1);
+	var second = arr[Math.floor(Math.random()*arr.length)];
+	var fin = []
+	fin.push(first)
+	fin.push(second)
+	return fin
+
+}
+
+var skills = rand2(skill)
+var adj = rand2(adjnouns)
+
+var description = "You are a "+skills[0]+" "+adj[0]+", a "+skills[1]+" "+adj[1]+", and a "+rand(nouns)+" "+rand(softverbs)+"."
+
+console.log(description)
+
+//$('#button').onClick(function(){
+//$('#target_element').addClass('.animate_class_name');});
+var audio = document.getElementsByTagName("audio")[0];
+//var end = $('dialog').append('<p>'+description+'</p>');
+
+
+$body.keydown(function(event){
+  if(event.which === 32){
+  	console.log("spacebar")
+  	var dialog = document.getElementById('dialog');
+  	$body.addClass('go')
+  	audio.play();
+  	$('dialog').append('<p>'+description+'</p>')
+  	setTimeout( function(){
+  		dialog.showModal();
+  	}
+
+
+  		, 21000);
+  }
+});
+
+//$('dialog').append('<p>'+description+'</p>')
+
+//if making this; probaby remove button, reload on click
+
+//var dialog = document.getElementById('dialog');
+var showBtn = document.getElementById('show');
+var closeBtn = document.getElementById('close');
+
+// Setup an event listener for the show button.
+showBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  // Show the dialog.
+  dialog.showModal();
+});
+
+// Setup an event listener for the close button.
+closeBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  // Close the dialog.
+  dialog.close();
+});
+
+
+};
+})();
+
+</script>
